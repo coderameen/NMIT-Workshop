@@ -47,6 +47,16 @@
   </div>
 </nav>
     <h1 style="text-align: center;">Eat Pizza Prediction</h1>
+    <div>
+        <form action="/predict" method="post">
+            <label>Enter Age: </label><input type="number" name="ageinp" class="form-control" placeholder="Enter your age"  required>
+            <br>
+            <label >Enter Weight: </label><input type="number" name="weightinp" class="form-control" placeholder="Enter your weight" required>
+            <br>
+            <input type="submit" value="Predict">
+            {{message}}
+        </form>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
